@@ -1,81 +1,210 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <!--Para caracteres especiales como la ñ-->
     <meta charset="UTF-8">
-    <!--Permite que la pag sea responsiva, ie se adapta a diferentes
-    tamaños de pantalla-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de caja CSS</title>
-    <!--Enlace se CSS (style.css)-->
+
+    <title>Contacto | Bip Bip Papel</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav>
-        <a href="menus.html">Inicio</a>
-        <a href="about.html">Quiénes somos</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
-    <!--Aquí va todo lo que ve el usuario-->
-    <h1>Contacto</h1>
-    <!--LOOK FOR CLASS-->
-    <div class="contact"> <!--esta clase es la que se usa para modificaciones-->
-        <!--las clases se manejan con el punto en CSS-->
-        <h2>¿Hablamos? Tu mascota nos dijo que sí</h2>
-        <p>
-            En BipBipPapel creemos que una tienda no se construye sola: se construye escuchando. Por eso, si tienes una duda, una idea, un pedido especial o simplemente quieres contarnos cómo va tu proyecto creativo, aquí estamos.
-            No importa si es una pregunta sobre tu pedido, una sugerencia para un nuevo diseño o un reto que quieres proponernos: cada mensaje cuenta. Así como cuidabas a tu Tamagotchi, nosotros cuidamos cada conversación. <!--Lo que está en blaco es lo que ve el usuario-->
-        </p>  <!--Para parrafo-->
-        <!--Div es contenedor de bloque y span un elemento de línea. Span vive en div-->
-    <div class="escribe"> <!--esta clase es la que se usa para modificaciones-->
-    <!--las clases se manejan con el punto en CSS-->
-        <h2> Escríbenos</h2>
-        <h2> Correos directos</h2>
-        <p>
-         Atención al cliente:  hola@tamapapel.com	        Dudas sobre pedidos, envíos, devoluciones.
-         Personalización: 	   personaliza@tamapapel.com	Pedidos especiales, diseños a medida, high end.
-         Comunidad:            comunidad@tamapapel.com	    Retos, galería, propuestas creativas, influencers.
-         Prensa y alianzas:    prensa@tamapapel.com	        Medios, colaboraciones de marca.
-            Te responderemos en un plazo máximo de 24 a 48 horas hábiles. Prometemos leerte con atención (y con nuestra mascota pixel mirando la pantalla). <!--Lo que está en blaco es lo que ve el usuario-->
-        </p>  <!--Para parrafo-->
-        <!--Div es contenedor de bloque y span un elemento de línea. Span vive en div-->
-    <div class="oficina"> <!--esta clase es la que se usa para modificaciones-->
-    <!--las clases se manejan con el punto en CSS-->
-        <h2> Dirección de oficina</h2>
-        <p>
-         Dirección: Av. Pixel 8-Bit #90, Col. Nostalgia, CDMX, México.
-         Horario de atención presencial: Lunes a viernes, 10:00 a 17:00 (con cita previa).
-         Nota: No tenemos tienda física abierta al público, pero si necesitas recoger un pedido o hablar en persona, escríbenos y coordinamos
-        </p>  <!--Para parrafo-->
-        <!--Div es contenedor de bloque y span un elemento de línea. Span vive en div-->
 
-        <footer class="pie-pagina">
-            <div>
-                <h3>Autores</h3>
-                <ul>
-                     <li>Hector Sanchez</li>
-                    <li>Ruben Olguin</li>
-                    <li>Daniel Miranda</li>
-                    <li>Teresa Mejia</li>
-                    <li>Axel Garcia</li>
-                    <li>Paula Velazquez</li>
-                    <li>Iris Lora</li>
-                </ul>
-            </div>
-    
-            <div>
-                <h3>Contacto</h3>
-                <p>
-                    <a href="mailto: bipbip_papel@gmail.com">
-                        bipbip_papel@gmail.com
+<body>
+
+    <!-- Encabezado y menú de navegación -->
+    <header class="caja-superior">
+
+        <div class="logo">
+            Bip Bip Papel
+        </div>
+
+        <nav aria-label="Navegación principal">
+            <ul class="menu">
+
+                <li>
+                    <a href="menus.html">Inicio</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn"
+                       aria-haspopup="true">
+                        Quiénes somos ▾
                     </a>
-                </p>
-            </div>
-    
-            <div>
-                <h3>Proyecto</h3>
-                <p>Bip Bip Papel</p>
-            </div>
-        </footer>
+
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="about.html">
+                                Acerca de nosotros
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contacto.html">
+                                Contáctenos
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <h1>Contacto</h1>
+
+        <!-- Sección de bienvenida -->
+        <section class="contact">
+
+            <h2>¿Hablamos? Tu mascota nos dijo que sí</h2>
+
+            <p>
+                En Bip Bip Papel creemos que una tienda no se
+                construye sola: se construye escuchando.
+                Por eso, si tienes una duda, una idea, un pedido
+                especial o quieres compartir tu proyecto creativo,
+                aquí estamos.
+            </p>
+
+            <p>
+                No importa si tienes una pregunta sobre tu pedido,
+                una sugerencia para un nuevo diseño o un reto
+                creativo que quieras proponernos: cada mensaje
+                cuenta.
+            </p>
+
+            <p>
+                Así como cuidabas a tu Tamagotchi, nosotros
+                cuidamos cada conversación.
+            </p>
+
+        </section>
+
+        <!-- Sección de correos -->
+        <section class="escribe">
+
+            <h2>Escríbenos</h2>
+
+            <h2>Correos directos</h2>
+
+            <p>
+                <strong>Atención al cliente:</strong>
+                <a href="mailto:hola@tamapapel.com">
+                    hola@tamapapel.com
+                </a>
+            </p>
+
+            <p>
+                Dudas sobre pedidos, envíos y devoluciones.
+            </p>
+
+            <p>
+                <strong>Personalización:</strong>
+                <a href="mailto:personaliza@tamapapel.com">
+                    personaliza@tamapapel.com
+                </a>
+            </p>
+
+            <p>
+                Pedidos especiales y diseños a medida.
+            </p>
+
+            <p>
+                <strong>Comunidad:</strong>
+                <a href="mailto:comunidad@tamapapel.com">
+                    comunidad@tamapapel.com
+                </a>
+            </p>
+
+            <p>
+                Retos, propuestas creativas y colaboraciones.
+            </p>
+
+            <p>
+                <strong>Prensa y alianzas:</strong>
+                <a href="mailto:prensa@tamapapel.com">
+                    prensa@tamapapel.com
+                </a>
+            </p>
+
+            <p>
+                Medios y colaboraciones de marca.
+            </p>
+
+            <p>
+                Te responderemos en un plazo máximo de
+                24 a 48 horas hábiles.
+            </p>
+
+        </section>
+
+        <!-- Sección de dirección y horario -->
+        <section class="oficina">
+
+            <h2>Dirección de oficina</h2>
+
+            <p>
+                <strong>Dirección:</strong>
+                Av. Pixel 8-Bit #90, Col. Nostalgia,
+                CDMX, México.
+            </p>
+
+            <p>
+                <strong>Horario de atención presencial:</strong>
+                Lunes a viernes, de 10:00 a 17:00,
+                con cita previa.
+            </p>
+
+            <p>
+                No tenemos tienda física abierta al público.
+                Si necesitas recoger un pedido o hablar en persona,
+                escríbenos para coordinar una cita.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+
+        <div>
+            <h3>Autores</h3>
+
+            <ul>
+                <li>Hector Sanchez</li>
+                <li>Ruben Olguin</li>
+                <li>Daniel Miranda</li>
+                <li>Teresa Mejia</li>
+                <li>Axel Garcia</li>
+                <li>Paula Velazquez</li>
+                <li>Iris Lora</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Contacto</h3>
+
+            <p>
+                <a href="mailto:bipbip_papel@gmail.com">
+                    bipbip_papel@gmail.com
+                </a>
+            </p>
+        </div>
+
+        <div>
+            <h3>Proyecto</h3>
+
+            <p>Bip Bip Papel</p>
+        </div>
+
+    </footer>
+
 </body>
+
 </html>

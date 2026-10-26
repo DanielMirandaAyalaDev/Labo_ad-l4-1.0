@@ -1,61 +1,123 @@
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blip Blip Papel</title>
+
+    <title>Inicio | Bip Bip Papel</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Caja principal -->
-    <div class="caja-superior">
-        <div class="logo">Blip Blip Papel</div>
+    <!-- Encabezado y menú de navegación -->
+    <header class="caja-superior">
 
-        <nav>
+        <div class="logo">
+            Bip Bip Papel
+        </div>
+
+        <nav aria-label="Navegación principal">
             <ul class="menu">
-                <li><a href="menus.html">Inicio</a></li>
+
+                <li>
+                    <a href="menus.html">Inicio</a>
+                </li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropbtn">Quiénes somos ▾</a>
+                    <a href="#" class="dropbtn"
+                       aria-haspopup="true">
+                        Quiénes somos ▾
+                    </a>
+
                     <ul class="dropdown-content">
-                        <li><a href="about.html">Acerca de nosotros</a></li>
-                        <li><a href="contacto.html">Contáctenos</a></li>
+                        <li>
+                            <a href="about.html">
+                                Acerca de nosotros
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contacto.html">
+                                Contáctenos
+                            </a>
+                        </li>
                     </ul>
                 </li>
+
             </ul>
         </nav>
-    </div>
+
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <section class="seccion">
+
+            <h1>Bienvenido a Bip Bip Papel</h1>
+
+            <p>
+                Descubre un espacio donde la creatividad,
+                la papelería y los regalos se encuentran
+                con la elegancia.
+            </p>
+
+            <h2>Detalles que inspiran</h2>
+
+            <p>
+                Encuentra productos especiales para expresar
+                tus ideas, organizar tus proyectos y sorprender
+                a las personas que más quieres.
+            </p>
+
+            <p>
+                Explora nuestra historia o ponte en contacto
+                con nosotros para conocer más sobre el proyecto.
+            </p>
+
+        </section>
+
+    </main>
 
     <!-- Pie de página -->
-    <footer>
-      <div>
-          <h3>Autores</h3>
-          <ul>
-              <li>Hector Sanchez</li>
-              <li>Ruben Olguin</li>
-              <li>Daniel Miranda</li>
-              <li>Teresa Mejia</li>
-              <li>Axel Garcia</li>
-              <li>Paula Velazquez</li>
-              <li>Iris Lora</li>
-          </ul>
-      </div>
+    <footer class="pie-pagina">
 
-      <div>
-          <h3>Contacto</h3>
-          <p>
-              <a href="mailto:bipbip_papel@gmail.com">
-                  bipbip_papel@gmail.com
-              </a>
-          </p>
-      </div>
+        <div>
+            <h3>Autores</h3>
 
-      <div>
-          <h3>Proyecto</h3>
-          <p>Bip Bip Papel</p>
-      </div>
-  </footer>
+            <ul>
+                <li>Hector Sanchez</li>
+                <li>Ruben Olguin</li>
+                <li>Daniel Miranda</li>
+                <li>Teresa Mejia</li>
+                <li>Axel Garcia</li>
+                <li>Paula Velazquez</li>
+                <li>Iris Lora</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Contacto</h3>
+
+            <p>
+                <a href="mailto:bipbip_papel@gmail.com">
+                    bipbip_papel@gmail.com
+                </a>
+            </p>
+        </div>
+
+        <div>
+            <h3>Proyecto</h3>
+
+            <p>Bip Bip Papel</p>
+        </div>
+
+    </footer>
 
 </body>
+
 </html>
