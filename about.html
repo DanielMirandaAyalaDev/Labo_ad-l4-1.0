@@ -9,6 +9,8 @@
     <title>Acerca de nosotros | Bip Bip Papel</title>
 
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet">
 </head>
 
 <body>
@@ -56,85 +58,143 @@
     <!-- Contenido principal -->
     <main>
 
-        <h1>Acerca de nosotros</h1>
+        <!-- Tarea 5: Título de la página -->
+<div class="text-center mb-5">
+    <h1 class="display-4 fw-bold">Acerca de nosotros</h1>
+    <p class="lead text-secondary">
+        Creatividad, elegancia y pequeños detalles que hacen especiales los momentos.
+    </p>
+</div>
 
         <!-- Presentación -->
-        <section class="seccion">
+         
+<!-- Tarea 5: Presentación de Bip Bip Papel -->
+<section class="card border-0 shadow-sm mb-5">
 
-            <h2>¿Quiénes somos?</h2>
+    <div class="row g-0 align-items-center">
 
-            <p>
-                En Bip Bip Papel creemos que los pequeños detalles
-                pueden convertir momentos cotidianos en recuerdos
-                especiales. Somos un proyecto dedicado a la papelería
-                y los regalos, con una propuesta que combina creatividad,
-                calidad y elegancia.
-            </p>
+        <!-- Imagen de presentación -->
+        <div class="col-md-5">
+             <img
+                src="https://i.pinimg.com/736x/9d/8b/30/9d8b3061fb7c054e766cd67001168461.jpg"
+                class="img-fluid w-100 rounded"
+                alt="Cuadernos y artículos de papelería"
+                style="height: 240px; object-fit: cover;"
+            >
 
-            <p>
-                Buscamos ofrecer productos cuidadosamente seleccionados
-                para quienes disfrutan escribir, organizar sus ideas,
-                expresar su personalidad y sorprender a las personas
-                que más quieren.
-            </p>
+        </div>
 
-        </section>
+        <!-- Texto de presentación -->
+        <div class="col-md-7">
+            <div class="card-body p-4">
+
+                <h2 class="card-title h3 mb-3">
+                    ¿Quiénes somos?
+                </h2>
+
+                <p class="card-text">
+                    En Bip Bip Papel creemos que los pequeños detalles
+                    pueden convertir momentos cotidianos en recuerdos
+                    especiales. Somos un proyecto dedicado a la papelería
+                    y los regalos, con una propuesta que combina creatividad,
+                    calidad y elegancia.
+                </p>
+
+                <p class="card-text">
+                    Buscamos ofrecer productos cuidadosamente seleccionados
+                    para quienes disfrutan escribir, organizar sus ideas,
+                    expresar su personalidad y sorprender a las personas
+                    que más quieren.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+       
+        <!-- Misión -->
+        
+<!-- Tarea 5: Misión y visión con Bootstrap -->
+<section class="mb-5">
+
+    <div class="row g-4">
 
         <!-- Misión -->
-        <section class="seccion">
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body p-4">
 
-            <h2>Nuestra misión</h2>
+                    <h2 class="card-title h3 mb-3">
+                        Nuestra misión
+                    </h2>
 
-            <p>
-                Ofrecer productos de papelería y regalos que destaquen
-                por su diseño, calidad y atención al detalle, brindando
-                a nuestros clientes una experiencia especial en cada
-                elección.
-            </p>
+                    <p class="card-text">
+                        Ofrecer productos de papelería y regalos que destaquen
+                        por su diseño, calidad y atención al detalle, brindando
+                        a nuestros clientes una experiencia especial en cada
+                        elección.
+                    </p>
 
-        </section>
+                </div>
+            </div>
+        </div>
 
         <!-- Visión -->
-        <section class="seccion">
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body p-4">
 
-            <h2>Nuestra visión</h2>
+                    <h2 class="card-title h3 mb-3">
+                        Nuestra visión
+                    </h2>
 
-            <p>
-                Convertirnos en una marca reconocida por su elegancia,
-                creatividad y compromiso con los detalles, creando una
-                comunidad de personas que valoran los productos
-                especiales y las experiencias significativas.
-            </p>
+                    <p class="card-text">
+                        Convertirnos en una marca reconocida por su elegancia,
+                        creatividad y compromiso con los detalles, creando una
+                        comunidad de personas que valoran los productos
+                        especiales y las experiencias significativas.
+                    </p>
 
-        </section>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- Fin de misión y visión -->
+
 
         <!-- Valores -->
-        <section class="seccion">
+        <section class="seccion mb-4">
 
-            <h2>Nuestros valores</h2>
+            <h2 class="text-center mb-3">Nuestros valores</h2>
 
-            <ul>
-                <li>
+            <ul class="list-group mb-3">
+
+                <li class="list-group-item">
                     <strong>Calidad:</strong>
-                    buscamos productos bien elaborados y duraderos.
-                </li>
-
-                <li>
+                         buscamos productos bien elaborados y duraderos.
+                 </li>
+                <li class="list-group-item">
                     <strong>Elegancia:</strong>
                     cuidamos la presentación y el diseño de cada detalle.
                 </li>
 
-                <li>
+                <li class="list-group-item">
                     <strong>Creatividad:</strong>
                     nos inspiran las ideas originales y la expresión personal.
                 </li>
 
-                <li>
+                <li class="list-group-item">
                     <strong>Atención:</strong>
                     valoramos las necesidades y opiniones de nuestros clientes.
                 </li>
 
-                <li>
+                <li class="list-group-item">
                     <strong>Compromiso:</strong>
                     trabajamos para ofrecer una experiencia agradable
                     y confiable.
@@ -142,6 +202,28 @@
             </ul>
 
         </section>
+        <section class="container my-5">
+
+    <h2 class="text-center mb-3">
+        Conoce Bip Bip Papel
+    </h2>
+
+    <p class="text-center">
+        Descubre nuestra propuesta de papelería, regalos y artículos
+        para hacer especiales tus momentos.
+    </p>
+
+    <!-- Video -->
+  <!-- Video de YouTube -->
+    <div class="ratio ratio-16x9">
+        <iframe
+            src="https://www.youtube.com/embed/xbDudzs1hXU"
+            title="Video de presentación de Bip Bip Papel"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</section>
 
     </main>
 
@@ -179,7 +261,7 @@
         </div>
 
     </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
