@@ -1,51 +1,185 @@
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiénes somos</title>
+
+    <title>Acerca de nosotros | Bip Bip Papel</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="about.html">Quiénes somos</a>
-        <a href="contact.html">Contacto</a>
-    </nav>
+    <!-- Encabezado y menú de navegación -->
+    <header class="caja-superior">
 
+        <div class="logo">
+            Bip Bip Papel
+        </div>
+
+        <nav aria-label="Navegación principal">
+            <ul class="menu">
+
+                <li>
+                    <a href="menus.html">Inicio</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn"
+                       aria-haspopup="true">
+                        Quiénes somos ▾
+                    </a>
+
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="about.html">
+                                Acerca de nosotros
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contacto.html">
+                                Contáctenos
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Contenido principal -->
     <main>
-        <h1>¿Quiénes somos?</h1>
 
-        <p>
-            Somos un equipo de desarrollo web que trabaja
-            de manera colaborativa para crear un sitio de blog.
-        </p>
+        <h1>Acerca de nosotros</h1>
 
-        <h2>Nuestro propósito</h2>
+        <!-- Presentación -->
+        <section class="seccion">
 
-        <p>
-            Nuestro objetivo es compartir información interesante,
-            ofrecer contenido útil y crear una experiencia agradable
-            para las personas que visitan nuestro sitio.
-        </p>
+            <h2>¿Quiénes somos?</h2>
 
-        <h2>¿Qué hace nuestro equipo?</h2>
+            <p>
+                En Bip Bip Papel creemos que los pequeños detalles
+                pueden convertir momentos cotidianos en recuerdos
+                especiales. Somos un proyecto dedicado a la papelería
+                y los regalos, con una propuesta que combina creatividad,
+                calidad y elegancia.
+            </p>
 
-        <p>
-            Investigamos, organizamos información y desarrollamos
-            páginas web utilizando HTML y CSS. Cada integrante
-            contribuye con sus ideas y habilidades para completar
-            el proyecto.
-        </p>
+            <p>
+                Buscamos ofrecer productos cuidadosamente seleccionados
+                para quienes disfrutan escribir, organizar sus ideas,
+                expresar su personalidad y sorprender a las personas
+                que más quieren.
+            </p>
+
+        </section>
+
+        <!-- Misión -->
+        <section class="seccion">
+
+            <h2>Nuestra misión</h2>
+
+            <p>
+                Ofrecer productos de papelería y regalos que destaquen
+                por su diseño, calidad y atención al detalle, brindando
+                a nuestros clientes una experiencia especial en cada
+                elección.
+            </p>
+
+        </section>
+
+        <!-- Visión -->
+        <section class="seccion">
+
+            <h2>Nuestra visión</h2>
+
+            <p>
+                Convertirnos en una marca reconocida por su elegancia,
+                creatividad y compromiso con los detalles, creando una
+                comunidad de personas que valoran los productos
+                especiales y las experiencias significativas.
+            </p>
+
+        </section>
+
+        <!-- Valores -->
+        <section class="seccion">
+
+            <h2>Nuestros valores</h2>
+
+            <ul>
+                <li>
+                    <strong>Calidad:</strong>
+                    buscamos productos bien elaborados y duraderos.
+                </li>
+
+                <li>
+                    <strong>Elegancia:</strong>
+                    cuidamos la presentación y el diseño de cada detalle.
+                </li>
+
+                <li>
+                    <strong>Creatividad:</strong>
+                    nos inspiran las ideas originales y la expresión personal.
+                </li>
+
+                <li>
+                    <strong>Atención:</strong>
+                    valoramos las necesidades y opiniones de nuestros clientes.
+                </li>
+
+                <li>
+                    <strong>Compromiso:</strong>
+                    trabajamos para ofrecer una experiencia agradable
+                    y confiable.
+                </li>
+            </ul>
+
+        </section>
+
     </main>
 
-    <footer>
-        <p>Autores: Equipo de desarrollo</p>
-        <p>Correo: contacto@example.com</p>
-        <p>Proyecto: Sitio Blog</p>
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+
+        <div>
+            <h3>Autores</h3>
+
+            <ul>
+                <li>Hector Sanchez</li>
+                <li>Ruben Olguin</li>
+                <li>Daniel Miranda</li>
+                <li>Teresa Mejia</li>
+                <li>Axel Garcia</li>
+                <li>Paula Velazquez</li>
+                <li>Iris Lora</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Contacto</h3>
+
+            <p>
+                <a href="mailto:bipbip_papel@gmail.com">
+                    bipbip_papel@gmail.com
+                </a>
+            </p>
+        </div>
+
+        <div>
+            <h3>Proyecto</h3>
+
+            <p>Bip Bip Papel</p>
+        </div>
+
     </footer>
 
 </body>
+
 </html>
