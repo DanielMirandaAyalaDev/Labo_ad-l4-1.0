@@ -1,53 +1,247 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+
+    <title>Acerca de nosotros | Bip Bip Papel</title>
+
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="min-vh-100 d-flex flex-column bg-dark">
-    <header class="d-flex justify-content-center bg-dark text-white text-center"
-        style="height: 24vh;">
+
+    <!-- Encabezado -->
+    <header class="d-flex justify-content-center align-items-center bg-dark text-white text-center"
+        style="min-height: 24vh;">
         <h1 class="display-2 fw-bold lh-1">About Us</h1>
     </header>
 
+    <!-- Navegación -->
     <nav class="mx-1 d-flex justify-content-center align-items-center bg-body-secondary border border-2 border-dark"
-        aria-label="Main navigation" style="height: 6vh; min-height: 40px;">
-        <ul class="d-flex align-items-center list-unstyled m-0 p-0">
-            <li><a class="px-3 fs-2 text-decoration-none text-dark" href="menus.html">Home</a></li>
+        aria-label="Main navigation"
+        style="min-height: 40px; height: 6vh;">
+
+        <ul class="d-flex align-items-center list-unstyled m-0 p-0 flex-wrap justify-content-center">
+            <li>
+                <a class="px-3 fs-2 text-decoration-none text-dark"
+                    href="menus.html">Home</a>
+            </li>
+
             <li class="fs-2 text-dark" aria-hidden="true">|</li>
-            <li><a class="px-3 fs-2 fw-bold text-decoration-none text-danger" href="about.html"
-                    aria-current="page">About Us</a></li>
+
+            <li>
+                <a class="px-3 fs-2 fw-bold text-decoration-none text-danger"
+                    href="about.html" aria-current="page">About Us</a>
+            </li>
+
             <li class="fs-2 text-dark" aria-hidden="true">|</li>
-            <li><a class="px-3 fs-2 text-decoration-none text-dark" href="contacto.html">Contact us</a></li>
+
+            <li>
+                <a class="px-3 fs-2 text-decoration-none text-dark"
+                    href="contacto.html">Contact us</a>
+            </li>
         </ul>
     </nav>
 
-    <main class="container-fluid px-1" style="height: 63vh;">
+    <!-- Contenido principal -->
+    <main class="container-fluid px-1 flex-grow-1">
+
         <div class="row g-0 h-100 bg-body-secondary border-start border-end border-2 border-dark">
-            <aside class="col-2 d-flex justify-content-center align-items-center border-end border-2 border-dark">
+
+            <!-- Anuncio lateral izquierdo -->
+            <aside class="col-12 col-md-2 d-flex justify-content-center align-items-center border-end border-2 border-dark p-3">
                 <h2 class="m-0 fs-2 fw-bold text-dark">AD</h2>
             </aside>
 
-            <section class="col-8 d-flex justify-content-center align-items-center border-end border-2 border-dark">
-                <h2 class="m-0 fs-2 fw-bold text-dark">Content</h2>
+            <!-- Contenido de Bip Bip Papel -->
+            <section class="col-12 col-md-8 border-end border-2 border-dark p-3 p-md-4">
+
+                <!-- Título de la página -->
+                <div class="text-center mb-5">
+                    <h2 class="display-4 fw-bold">Acerca de nosotros</h2>
+
+                    <p class="lead text-secondary">
+                        Creatividad, elegancia y pequeños detalles que hacen especiales los momentos.
+                    </p>
+                </div>
+
+                <!-- Presentación -->
+                <section class="card border-0 shadow-sm mb-5">
+
+                    <div class="row g-0 align-items-center">
+
+                        <!-- Imagen de presentación -->
+                        <div class="col-12 col-md-5">
+                            <img
+                                src="https://i.pinimg.com/736x/9d/8b/30/9d8b3061fb7c054e766cd67001168461.jpg"
+                                class="img-fluid w-100 rounded"
+                                alt="Cuadernos y artículos de papelería"
+                                style="height: 240px; object-fit: cover;">
+                        </div>
+
+                        <!-- Texto de presentación -->
+                        <div class="col-12 col-md-7">
+                            <div class="card-body p-4">
+
+                                <h3 class="card-title h3 mb-3">
+                                    ¿Quiénes somos?
+                                </h3>
+
+                                <p class="card-text">
+                                    En Bip Bip Papel creemos que los pequeños detalles
+                                    pueden convertir momentos cotidianos en recuerdos
+                                    especiales. Somos un proyecto dedicado a la papelería
+                                    y los regalos, con una propuesta que combina creatividad,
+                                    calidad y elegancia.
+                                </p>
+
+                                <p class="card-text">
+                                    Buscamos ofrecer productos cuidadosamente seleccionados
+                                    para quienes disfrutan escribir, organizar sus ideas,
+                                    expresar su personalidad y sorprender a las personas
+                                    que más quieren.
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Misión y visión -->
+                <section class="mb-5">
+
+                    <div class="row g-4">
+
+                        <!-- Misión -->
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card-body p-4">
+
+                                    <h3 class="card-title h3 mb-3">
+                                        Nuestra misión
+                                    </h3>
+
+                                    <p class="card-text">
+                                        Ofrecer productos de papelería y regalos que destaquen
+                                        por su diseño, calidad y atención al detalle, brindando
+                                        a nuestros clientes una experiencia especial en cada
+                                        elección.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Visión -->
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card-body p-4">
+
+                                    <h3 class="card-title h3 mb-3">
+                                        Nuestra visión
+                                    </h3>
+
+                                    <p class="card-text">
+                                        Convertirnos en una marca reconocida por su elegancia,
+                                        creatividad y compromiso con los detalles, creando una
+                                        comunidad de personas que valoran los productos
+                                        especiales y las experiencias significativas.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Valores -->
+                <section class="mb-5">
+
+                    <h2 class="text-center mb-3">Nuestros valores</h2>
+
+                    <ul class="list-group mb-3">
+
+                        <li class="list-group-item">
+                            <strong>Calidad:</strong>
+                            buscamos productos bien elaborados y duraderos.
+                        </li>
+
+                        <li class="list-group-item">
+                            <strong>Elegancia:</strong>
+                            cuidamos la presentación y el diseño de cada detalle.
+                        </li>
+
+                        <li class="list-group-item">
+                            <strong>Creatividad:</strong>
+                            nos inspiran las ideas originales y la expresión personal.
+                        </li>
+
+                        <li class="list-group-item">
+                            <strong>Atención:</strong>
+                            valoramos las necesidades y opiniones de nuestros clientes.
+                        </li>
+
+                        <li class="list-group-item">
+                            <strong>Compromiso:</strong>
+                            trabajamos para ofrecer una experiencia agradable
+                            y confiable.
+                        </li>
+
+                    </ul>
+                </section>
+
+                <!-- Video de presentación -->
+                <section class="container-fluid my-5">
+
+                    <h2 class="text-center mb-3">
+                        Conoce Bip Bip Papel
+                    </h2>
+
+                    <p class="text-center">
+                        Descubre nuestra propuesta de papelería, regalos y artículos
+                        para hacer especiales tus momentos.
+                    </p>
+
+                    <div class="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.youtube.com/embed/xbDudzs1hXU"
+                            title="Video de presentación de Bip Bip Papel"
+                            loading="lazy"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                </section>
+
             </section>
 
-            <aside class="col-2 d-flex justify-content-center align-items-center">
+            <!-- Anuncio lateral derecho -->
+            <aside class="col-12 col-md-2 d-flex justify-content-center align-items-center p-3">
                 <h2 class="m-0 fs-2 fw-bold text-dark">News</h2>
             </aside>
+
         </div>
     </main>
 
+    <!-- Pie de página -->
     <footer class="mx-1 d-flex justify-content-center align-items-center bg-body-secondary border border-2 border-dark"
-        style="height: 6vh; min-height: 40px;">
-        <h2 class="m-0 fs-2 fw-normal text-dark">Footer</h2>
-    </footer>
-</body>
+        style="min-height: 40px; height: 6vh;">
 
+        <h2 class="m-0 fs-2 fw-normal text-dark">Footer</h2>
+
+    </footer>
+
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
