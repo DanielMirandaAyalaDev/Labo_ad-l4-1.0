@@ -1,0 +1,194 @@
+/* ========================================================
+   BLIP BLIP PAPEL | Estilos del index.html
+   Compatible con Bootstrap 5.3.8
+   Paleta: SOLO 5 colores
+   ======================================================== */
+
+:root {
+  --oscuro: #3E9B94;    /* Header, footer y texto */
+  --blanco: #CFF0EA;    /* Texto claro y contenido principal */
+  --fondo: #f8f9fa;     /* Fondo general y tarjetas */
+  --gris: #88C9C4;      /* Columnas laterales y bordes */
+  --morado: #20666B;    /* Color de acento */
+}
+
+/* 1. FONDO DE TODA LA PÁGINA */
+body.site-body.bg-light {
+  min-height: 100vh;
+  background-color: var(--fondo) !important;
+  color: var(--oscuro);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* 2. HEADER Y NAVBAR
+   El !important es necesario para sustituir bg-white de Bootstrap. */
+.site-header.bg-white {
+  background-color: var(--oscuro) !important;
+  border-bottom: 3px solid var(--morado) !important;
+}
+
+.site-header .navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.site-header .navbar-brand,
+.site-header .navbar-brand:hover,
+.site-header .navbar-brand:focus {
+  color: var(--blanco);
+  font-size: 1.4rem;
+}
+
+/* Acento visible sobre fondo oscuro */
+.site-header .brand-accent {
+  color: var(--blanco);
+  text-decoration: underline;
+  text-decoration-color: var(--morado);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+}
+
+.site-header .navbar .nav-link {
+  color: var(--blanco);
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: border-color .2s ease, color .2s ease;
+}
+
+.site-header .navbar .nav-link:hover,
+.site-header .navbar .nav-link:focus,
+.site-header .navbar .nav-link.active {
+  color: var(--blanco);
+  border-bottom-color: var(--morado);
+}
+
+/* Ícono del menú hamburguesa visible en el header oscuro */
+.site-header .navbar-toggler {
+  border: 1px solid var(--gris);
+}
+
+.site-header .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* 3. CONTENEDORES DEL WIREFRAME */
+.site-content {
+  width: 100%;
+}
+
+/* Lateral izquierdo (AD) y lateral derecho (News) */
+.side-panel.bg-white {
+  background-color: var(--gris) !important;
+  border-color: var(--gris) !important;
+  min-height: 200px;
+}
+
+.side-title {
+  color: var(--oscuro);
+  font-size: 1.1rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+/* Contenido central */
+.main-panel.bg-white {
+  background-color: var(--blanco) !important;
+  border-color: var(--gris) !important;
+  min-height: 530px;
+  box-shadow: 0 6px 20px rgb(33 37 41 / 7%);
+}
+
+.main-panel h1,
+.main-panel h2,
+.main-panel h3 {
+  color: var(--oscuro);
+}
+
+.eyebrow {
+  color: var(--morado);
+  font-size: .8rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.lead {
+  line-height: 1.7;
+}
+
+/* Imagen SVG integrada en index.html */
+.blog-cover {
+  display: block;
+  width: 100%;
+  max-height: 280px;
+  background-color: var(--fondo);
+  border: 1px solid var(--gris);
+}
+
+/* 4. TARJETAS DE LOS ARTÍCULOS */
+.article-card.bg-light {
+  background-color: var(--fondo) !important;
+  border: 1px solid var(--gris);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgb(33 37 41 / 9%);
+}
+
+/* 5. BOTÓN PRINCIPAL: personaliza btn-dark de Bootstrap */
+.btn.btn-dark.btn-brand {
+  --bs-btn-color: var(--blanco);
+  --bs-btn-bg: var(--morado);
+  --bs-btn-border-color: var(--morado);
+  --bs-btn-hover-color: var(--blanco);
+  --bs-btn-hover-bg: var(--morado);
+  --bs-btn-hover-border-color: var(--morado);
+  --bs-btn-active-color: var(--blanco);
+  --bs-btn-active-bg: var(--morado);
+  --bs-btn-active-border-color: var(--morado);
+  --bs-btn-focus-shadow-rgb: 111, 66, 193;
+  font-weight: 600;
+}
+
+.btn.btn-dark.btn-brand:hover {
+  opacity: .9;
+}
+
+/* 6. FOOTER */
+.site-footer.bg-dark {
+  background-color: var(--oscuro) !important;
+  color: var(--blanco) !important;
+  border-top: 3px solid var(--morado);
+}
+
+.site-footer p {
+  color: var(--blanco);
+  font-size: .92rem;
+}
+
+/* 7. AJUSTES RESPONSIVOS */
+@media (max-width: 991.98px) {
+  .site-header .navbar .nav-link {
+    padding: .7rem 0;
+  }
+
+  .side-panel.bg-white {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .site-header .navbar-brand {
+    font-size: 1.15rem;
+  }
+
+  .main-panel.bg-white {
+    padding: 1.25rem !important;
+    min-height: auto;
+  }
+
+  .site-footer p {
+    font-size: .85rem;
+  }
+}
