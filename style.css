@@ -1,120 +1,194 @@
+/* ========================================================
+   BLIP BLIP PAPEL | Estilos del index.html
+   Compatible con Bootstrap 5.3.8
+   Paleta: SOLO 5 colores
+   ======================================================== */
 
-/* Diseño general */
-* {
-    box-sizing: border-box;
+:root {
+  --oscuro: #3E9B94;    /* Header, footer y texto */
+  --blanco: #CFF0EA;    /* Texto claro y contenido principal */
+  --fondo: #f8f9fa;     /* Fondo general y tarjetas */
+  --gris: #88C9C4;      /* Columnas laterales y bordes */
+  --morado: #20666B;    /* Color de acento */
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #d9d9d9;
-    color: #000000;
+/* 1. FONDO DE TODA LA PÁGINA */
+body.site-body.bg-light {
+  min-height: 100vh;
+  background-color: var(--fondo) !important;
+  color: var(--oscuro);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
-/* Título superior negro */
-.titulo-principal {
-    height: 252px;
-    background-color: #1f1f1f;
-    color: #ffffff;
-    text-align: center;
-    padding-top: 0;
+/* 2. HEADER Y NAVBAR
+   El !important es necesario para sustituir bg-white de Bootstrap. */
+.site-header.bg-white {
+  background-color: var(--oscuro) !important;
+  border-bottom: 3px solid var(--morado) !important;
 }
 
-.titulo-principal h1 {
-    margin: 0;
-    font-size: clamp(48px, 6vw, 96px);
-    font-weight: bold;
+.site-header .navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-/* Barra de navegación */
-.barra-navegacion {
-    min-height: 65px;
-    background-color: #d9d9d9;
-    border: 2px solid #000000;
-    padding: 0;
+.site-header .navbar-brand,
+.site-header .navbar-brand:hover,
+.site-header .navbar-brand:focus {
+  color: var(--blanco);
+  font-size: 1.4rem;
 }
 
-.barra-navegacion .nav-link {
-    color: #000000;
-    font-size: clamp(20px, 3vw, 48px);
-    padding: 0 18px;
-    white-space: nowrap;
+/* Acento visible sobre fondo oscuro */
+.site-header .brand-accent {
+  color: var(--blanco);
+  text-decoration: underline;
+  text-decoration-color: var(--morado);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
 }
 
-.barra-navegacion .nav-link:hover {
-    color: #ed1717;
+.site-header .navbar .nav-link {
+  color: var(--blanco);
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: border-color .2s ease, color .2s ease;
 }
 
-.barra-navegacion .nav-link.activo {
-    color: #ed1717;
-    font-weight: bold;
+.site-header .navbar .nav-link:hover,
+.site-header .navbar .nav-link:focus,
+.site-header .navbar .nav-link.active {
+  color: var(--blanco);
+  border-bottom-color: var(--morado);
 }
 
-.separador {
-    font-size: clamp(20px, 3vw, 48px);
-    line-height: 1;
-    color: #000000;
+/* Ícono del menú hamburguesa visible en el header oscuro */
+.site-header .navbar-toggler {
+  border: 1px solid var(--gris);
 }
 
-/* Columnas AD, Content y News */
-.columnas-principales {
-    min-height: 56vw;
-    background-color: #d9d9d9;
+.site-header .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
 }
 
-.columna {
-    border-left: 2px solid #000000;
-    border-right: 1px solid #000000;
-    border-bottom: 2px solid #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+/* 3. CONTENEDORES DEL WIREFRAME */
+.site-content {
+  width: 100%;
 }
 
-.columna h2 {
-    margin: 0;
-    font-size: clamp(24px, 3.2vw, 48px);
-    font-weight: bold;
+/* Lateral izquierdo (AD) y lateral derecho (News) */
+.side-panel.bg-white {
+  background-color: var(--gris) !important;
+  border-color: var(--gris) !important;
+  min-height: 200px;
 }
 
-/* Pie de página */
-.pie-pagina {
-    min-height: 65px;
-    background-color: #d9d9d9;
-    border: 2px solid #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.side-title {
+  color: var(--oscuro);
+  font-size: 1.1rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
 }
 
-.pie-pagina h2 {
-    margin: 0;
-    font-size: clamp(24px, 3.2vw, 48px);
-    font-weight: normal;
+/* Contenido central */
+.main-panel.bg-white {
+  background-color: var(--blanco) !important;
+  border-color: var(--gris) !important;
+  min-height: 530px;
+  box-shadow: 0 6px 20px rgb(33 37 41 / 7%);
 }
 
-/* Adaptación para pantallas pequeñas */
-@media (max-width: 576px) {
-    .titulo-principal {
-        height: 150px;
-    }
+.main-panel h1,
+.main-panel h2,
+.main-panel h3 {
+  color: var(--oscuro);
+}
 
-    .barra-navegacion .nav-link {
-        padding: 0 6px;
-        font-size: 15px;
-    }
+.eyebrow {
+  color: var(--morado);
+  font-size: .8rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
 
-    .separador {
-        font-size: 18px;
-    }
+.lead {
+  line-height: 1.7;
+}
 
-    .columnas-principales {
-        min-height: 450px;
-    }
+/* Imagen SVG integrada en index.html */
+.blog-cover {
+  display: block;
+  width: 100%;
+  max-height: 280px;
+  background-color: var(--fondo);
+  border: 1px solid var(--gris);
+}
 
-    .columna h2 {
-        font-size: 20px;
-    }
+/* 4. TARJETAS DE LOS ARTÍCULOS */
+.article-card.bg-light {
+  background-color: var(--fondo) !important;
+  border: 1px solid var(--gris);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgb(33 37 41 / 9%);
+}
+
+/* 5. BOTÓN PRINCIPAL: personaliza btn-dark de Bootstrap */
+.btn.btn-dark.btn-brand {
+  --bs-btn-color: var(--blanco);
+  --bs-btn-bg: var(--morado);
+  --bs-btn-border-color: var(--morado);
+  --bs-btn-hover-color: var(--blanco);
+  --bs-btn-hover-bg: var(--morado);
+  --bs-btn-hover-border-color: var(--morado);
+  --bs-btn-active-color: var(--blanco);
+  --bs-btn-active-bg: var(--morado);
+  --bs-btn-active-border-color: var(--morado);
+  --bs-btn-focus-shadow-rgb: 111, 66, 193;
+  font-weight: 600;
+}
+
+.btn.btn-dark.btn-brand:hover {
+  opacity: .9;
+}
+
+/* 6. FOOTER */
+.site-footer.bg-dark {
+  background-color: var(--oscuro) !important;
+  color: var(--blanco) !important;
+  border-top: 3px solid var(--morado);
+}
+
+.site-footer p {
+  color: var(--blanco);
+  font-size: .92rem;
+}
+
+/* 7. AJUSTES RESPONSIVOS */
+@media (max-width: 991.98px) {
+  .site-header .navbar .nav-link {
+    padding: .7rem 0;
+  }
+
+  .side-panel.bg-white {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .site-header .navbar-brand {
+    font-size: 1.15rem;
+  }
+
+  .main-panel.bg-white {
+    padding: 1.25rem !important;
+    min-height: auto;
+  }
+
+  .site-footer p {
+    font-size: .85rem;
+  }
 }
